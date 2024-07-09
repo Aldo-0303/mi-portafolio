@@ -1,5 +1,7 @@
 ---
 import datos from '../../data.json';
+import GitHub from '../icons/GitHub.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
 import Mail from '../icons/Mail.astro';
 import Ubicacion from '../icons/ubicacion.astro';
 
@@ -28,10 +30,18 @@ const { principal } = Astro.props;
                     <Ubicacion />
                     {direccion}
                 </span>
-                <a href={`mailto:${correo}`} class="flex items-center gap-2 text-gray-300">
+                <a href={`mailto:${correo}`} class="flex items-center gap-2 text-gray-300 hover:text-blue-500" target="_blank" rel="noopener noreferrer">
                     <Mail />
                     {correo}
                 </a>
+                <footer class="flex gap-3">
+                    <a href="https://github.com/Aldo-0303" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-500">
+                        <GitHub />
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-carranza-8576722b7/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-500">
+                        <LinkedIn />
+                    </a>
+                </footer>
             </div>
         </header>
     </main>
