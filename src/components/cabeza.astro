@@ -1,0 +1,28 @@
+---
+interface Props {
+    pagina: string;
+}
+
+const { pagina } = Astro.props;
+---
+<header class="fixed z-10 left-0 top-0 bg-gray-900 w-full border-b border-gray-600 h-14">
+    <nav class="p-4 flex justify-center">
+        <ul class="flex font-medium gap-4">
+            <li>
+                <a href="/" class={ pagina === '/' ? "p-0 rounded text-blue-500" : "hover:bg-transparent p-0 hover:text-blue-500 text-white"}>
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="/proyectos" class={ pagina === '/proyectos' ? "p-0 rounded text-blue-500" : "hover:bg-transparent p-0 hover:text-blue-500 text-white"}>
+                    Proyectos
+                </a>
+            </li>
+            <li>
+                <a href="/conocimiento" class={ pagina === '/conocimiento' ? "p-0 rounded text-blue-500" : "hover:bg-transparent p-0 hover:text-blue-500 text-white"}>
+                    Conocimientos
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
