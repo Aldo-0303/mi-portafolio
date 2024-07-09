@@ -13,6 +13,10 @@ const { puesto, empresa, fecha, descripcion } = Astro.props;
         <h2 class="text-xl font-bold text-white">{puesto}</h2>
         <span class="text-gray-300">{empresa}</span>
     </header>
-    <p class="text-balance text-gray-300">{fecha}</p>
-    <p class="text-gray-300">{descripcion}</p>
+    <hr class="border-t-2 border-gray-700" />
+    <footer>
+        <p class="text-balance text-gray-300">{fecha}</p>
+        <p class="text-gray-300">{descripcion}</p>
+    </footer>
+
 </div>

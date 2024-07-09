@@ -1,0 +1,47 @@
+---
+import datos from '../../data.json'
+import Html from '../icons/html.astro'
+import Css from '../icons/css.astro'
+import Javascript from '../icons/javascript.astro'
+import Tailwind from '../icons/tailwind.astro'
+import React from '../icons/react.astro'
+import Node from '../icons/node.astro'
+import Sql from '../icons/sql.astro'
+import Php from '../icons/php.astro'
+import Next from '../icons/next.astro'
+import Git from '../icons/git.astro'
+import GitHub from '../icons/GitHub.astro'
+
+const { habilidades } = datos
+const iconos = [
+    { nombre: 'HTML', icono: Html },
+    { nombre: 'CSS', icono: Css },
+    { nombre: 'JavaScript', icono: Javascript },
+    { nombre: 'Tailwind CSS', icono: Tailwind },
+    { nombre: 'React', icono: React },
+    { nombre: 'Node.js', icono: Node },
+    { nombre: 'MySQL', icono: Sql },
+    { nombre: 'PHP', icono: Php },
+    { nombre: 'Next.js', icono: Next },
+    { nombre: 'Git', icono: Git },
+    { nombre: 'GitHub', icono: GitHub }
+]
+---
+<section class="w-full py-8">
+    <main class="w-full mx-auto max-w-6xl flex flex-col items-center gap-2">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Habilidades</h1>
+        <ul class="flex gap-3">
+            {
+                habilidades.map((habilidad) => {
+                    const Icon = iconos.find((icono) => icono.nombre === habilidad).icono
+                    return (
+                    <li class="flex items-center py-1 px-2 gap-2 border border-blue-500 rounded-md shadow-sm shadow-indigo-400 text-gray-200">
+                        {<Icon />}
+                        <span>{habilidad}</span>
+                    </li>
+                    )
+                })
+            }
+        </ul>
+    </main>
+</section>
