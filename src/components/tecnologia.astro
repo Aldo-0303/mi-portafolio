@@ -1,0 +1,12 @@
+---
+// interface Tecnologia {
+//   Icono: Astr
+//   tecnologia: string
+// }
+
+const { Icono, tecnologia } = Astro.props
+---
+<li class="flex items-center py-1 px-2 gap-2 border border-blue-500 rounded-md shadow-sm shadow-indigo-400 text-gray-200">
+    {Icono && <Icono />}
+    <span>{tecnologia}</span>
+</li>

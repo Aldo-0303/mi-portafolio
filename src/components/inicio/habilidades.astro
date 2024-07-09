@@ -1,16 +1,17 @@
 ---
-import datos from '../../data.json'
-import Html from '../icons/html.astro'
-import Css from '../icons/css.astro'
-import Javascript from '../icons/javascript.astro'
-import Tailwind from '../icons/tailwind.astro'
-import React from '../icons/react.astro'
-import Node from '../icons/node.astro'
-import Sql from '../icons/sql.astro'
-import Php from '../icons/php.astro'
-import Next from '../icons/next.astro'
-import Git from '../icons/git.astro'
-import GitHub from '../icons/GitHub.astro'
+import datos from '../../../data.json'
+import Html from '../../icons/html.astro'
+import Css from '../../icons/css.astro'
+import Javascript from '../../icons/javascript.astro'
+import Tailwind from '../../icons/tailwind.astro'
+import React from '../../icons/react.astro'
+import Node from '../../icons/node.astro'
+import Sql from '../../icons/sql.astro'
+import Php from '../../icons/php.astro'
+import Next from '../../icons/next.astro'
+import Git from '../../icons/git.astro'
+import GitHub from '../../icons/GitHub.astro'
+import Tecnologia from '../tecnologia.astro'
 
 const { habilidades } = datos
 const iconos = [
@@ -34,12 +35,7 @@ const iconos = [
             {
                 habilidades.map((habilidad) => {
                     const Icon = iconos.find((icono) => icono.nombre === habilidad).icono
-                    return (
-                    <li class="flex items-center py-1 px-2 gap-2 border border-blue-500 rounded-md shadow-sm shadow-indigo-400 text-gray-200">
-                        {<Icon />}
-                        <span>{habilidad}</span>
-                    </li>
-                    )
+                    return <Tecnologia Icono={Icon} tecnologia={habilidad} />
                 })
             }
         </ul>

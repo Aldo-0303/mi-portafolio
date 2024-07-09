@@ -1,4 +1,10 @@
 {
+    "informacion": {
+        "nombre": "Daniel Francisco Carranza Martínez",
+        "edad": 22,
+        "direccion": "San Salvador, El Salvador",
+        "correo": "danielcm7752@gmail.com"
+    },
     "experiencia": [
         {
             "empresa": "TAS El Salvador",
@@ -14,6 +20,41 @@
         }
     ],
     "proyectos": [
+        {
+            "nombre": "Sistema de solicitud, aprobación y seguimiento de cotizaciones de productos para el área de ventas de TAS El Salvador",
+            "descripcion": "Sistema para solicitar cotizaciones de productos, aprobarlas o rechazarlas y llevar un seguimiento de las mismas. Con una interfaz al estilo del correo electrónico permite enviar la cotización al encargado de ventas y recibir la respuesta pudiendo también generarse un chat entre el solicitante y el encargado de ventas para aclarar dudas o detalles de la cotización.",
+            "tecnologias": ["React", "Tailwind CSS", "Node.js", "Express", "JWT", "PostgreSQL"]
+        },
+        {
+            "nombre": "Control de inventario y ganancias",
+            "descripcion": "Llevar el control de productos para la venta, registrar su ingreso y precio de compra, establecer precio de venta y vender los productos. Cuenta con sección para ver ganancias o pérdidas.",
+            "tecnologias": ["Next.js", "Tailwind CSS", "Next-auth", "PostgreSQL", "SSR"]
+        },
+        {
+            "nombre": "Control de salas de reunión",
+            "descripcion": "Software para llevar el control del uso de las salas de reuniones disponibles en el edificio. Reservar uso en horarios preestablecidos.",
+            "tecnologias": ["React", "Tailwind CSS", "PHP", "MySQL"]
+        },
+        {
+            "nombre": "Sistema de reportería para ISTU (migrado)",
+            "descripcion": "Sistema de reportes, resúmenes, gráficos sobre toda la información recogida en los sistemas de Sunset Park y La Puerta Del Diablo.",
+            "tecnologias": ["React", "Tailwind CSS", "Express", "JWT", "MySQL"]
+        },
+        {
+            "nombre": "Sistema de reportería para ISTU",
+            "descripcion": "Sistema de reportes, resúmenes, gráficos sobre toda la información recogida en los sistemas de Sunset Park y La Puerta Del Diablo.",
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+        },
+        {
+            "nombre": "Software de administración compatibles con puntos de ventas (POS)",
+            "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de La Puerta del Diablo.",
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+        },
+        {
+            "nombre": "Software de administración compatibles con puntos de ventas (POS) y en el sistema “Software de cobro de recargas” ambos sistemas para Sunset Park.",
+            "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de Sunset Park.",
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+        }
     ],
     "habilidades": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Node.js", "MySQL", "PHP", "Next.js", "Git", "GitHub"]
 }

@@ -1,0 +1,75 @@
+---
+import datos from "../../../data.json";
+import Tecnologia from "../tecnologia.astro";
+import Html from '../../icons/html.astro'
+import Css from '../../icons/css.astro'
+import Javascript from '../../icons/javascript.astro'
+import Tailwind from '../../icons/tailwind.astro'
+import React from '../../icons/react.astro'
+import Node from '../../icons/node.astro'
+import Sql from '../../icons/sql.astro'
+import Php from '../../icons/php.astro'
+import Next from '../../icons/next.astro'
+import Git from '../../icons/git.astro'
+import GitHub from '../../icons/GitHub.astro'
+import Bootstrap from "../../icons/bootstrap.astro";
+
+const iconos = [
+    { nombre: 'HTML', icono: Html },
+    { nombre: 'CSS', icono: Css },
+    { nombre: 'JavaScript', icono: Javascript },
+    { nombre: 'Tailwind CSS', icono: Tailwind },
+    { nombre: 'React', icono: React },
+    { nombre: 'Node.js', icono: Node },
+    { nombre: 'MySQL', icono: Sql },
+    { nombre: 'PHP', icono: Php },
+    { nombre: 'Next.js', icono: Next },
+    { nombre: 'Git', icono: Git },
+    { nombre: 'GitHub', icono: GitHub },
+    { nombre: 'Bootstrap', icono: Bootstrap }
+]
+
+const { proyectos } = datos;
+---
+
+<section class="w-full py-8">
+    <main class="w-full mx-auto max-w-6xl flex flex-col items-center gap-2 p-4">
+        <h1 class="text-3xl font-bold text-white mb-4">Mis proyectos</h1>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-300">
+                <thead class="text-xs uppercase bg-gray-700">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Nombre</th>
+                        <th scope="col" class="px-6 py-3">Descripción</th>
+                        <th scope="col" class="px-6 py-3">Tecnologías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        proyectos.map((proyecto) => (
+                            <tr class="odd:bg-gray-900 even:bg-gray-800 border-b border-gray-700">
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium whitespace-normal text-white"
+                                >
+                                    {proyecto.nombre}
+                                </th>
+                                <td class="px-6 py-4">{proyecto.descripcion}</td>
+                                <td class="px-6 py-4">
+                                    <ul class="flex flex-wrap gap-2">
+                                        {
+                                            proyecto.tecnologias.map((tecnologia) => {
+                                                const Icon = iconos.find((icono) => icono.nombre === tecnologia)?.icono
+                                                return <Tecnologia Icono={Icon} tecnologia={tecnologia} />
+                                            })
+                                        }
+                                    </ul>
+                                </td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
+        </div>
+    </main>
+</section>
