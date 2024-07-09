@@ -35,27 +35,25 @@ const { proyectos } = datos;
 <section class="w-full py-8">
     <main class="w-full mx-auto max-w-6xl flex flex-col items-center gap-2 p-4">
         <h1 class="text-3xl font-bold text-white mb-4">Mis proyectos</h1>
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="relative overflow-x-auto shadow-md rounded-lg">
             <table class="w-full text-sm text-left rtl:text-right text-gray-300">
                 <thead class="text-xs uppercase bg-gray-700">
                     <tr>
-                        <th scope="col" class="px-6 py-3">Nombre</th>
-                        <th scope="col" class="px-6 py-3">Descripción</th>
-                        <th scope="col" class="px-6 py-3">Tecnologías</th>
+                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Nombre</th>
+                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Descripción</th>
+                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Tecnologías</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         proyectos.map((proyecto) => (
                             <tr class="odd:bg-gray-900 even:bg-gray-800 border-b border-gray-700">
-                                <th
-                                    scope="row"
-                                    class="px-6 py-4 font-medium whitespace-normal text-white"
+                                <th scope="row" class="p-2 sm:px-6 sm:py-4 font-medium whitespace-normal text-white"
                                 >
                                     {proyecto.nombre}
                                 </th>
-                                <td class="px-6 py-4">{proyecto.descripcion}</td>
-                                <td class="px-6 py-4">
+                                <td class="p-2 sm:px-6 sm:py-4">{proyecto.descripcion}</td>
+                                <td class="p-2 sm:px-6 sm:py-4">
                                     <ul class="flex flex-wrap gap-2">
                                         {
                                             proyecto.tecnologias.map((tecnologia) => {
