@@ -8,16 +8,16 @@
     "experiencia": [
         {
             "empresa": "TAS El Salvador",
-            "puesto": "Desarrollador Web",
-            "fecha": "Diciembre 2022 - Agosto 2023",
-            "descripcion": "Desarrollo de sitios web con tecnologías como HTML, CSS, JavaScript, PHP, MySQL, entre otras."
+            "puesto": "Programador Junior Full Stack",
+            "fecha": "Moviembre 2023 - Actualidad",
+            "descripcion": "Desarrollo de aplicaciones web con tecnologías como React, Node.js, Express, Next.js, entre otras."
         },
         {
             "empresa": "TAS El Salvador",
-            "puesto": "Programador Junior Full Stack",
-            "fecha": "Dicimebre 2023 - Actualidad",
-            "descripcion": "Desarrollo de aplicaciones web con tecnologías como React, Node.js, Express, Next.js, entre otras."
-        }
+            "puesto": "Desarrollador Web",
+            "fecha": "Diciembre 2022 - Agosto 2023",
+            "descripcion": "Desarrollo de sitios web con tecnologías como HTML, CSS, JavaScript, PHP, MySQL, entre otras."
+        }        
     ],
     "proyectos": [
         {
