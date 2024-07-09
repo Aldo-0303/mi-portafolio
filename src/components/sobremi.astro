@@ -1,0 +1,21 @@
+---
+import datos from '../../data.json'
+import Experiencia from './Experiencia.astro'
+const { experiencia } = datos
+---
+<section class="w-full py-8">
+    <main class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 max-w-6xl flex flex-col items-center justify-center">
+            <h1 class="text-2xl md:text-4xl font-bold text-white">Sobre mí</h1>
+            <p class="text-lg text-balance text-center text-white max-w-lg">
+                Me encanta la tecnología y el desarrollo web. Me apasiona estar continuamente aprendiendo cosas nuevas y disfruto compartir y discutir conocimientos con los demás.
+            </p>
+        </div>
+        <div class="p-4 max-w-6xl flex flex-col items-center gap-2">
+            <h1 class="text-2xl md:text-4xl font-bold text-white">Experiencia</h1>
+            <section class="w-full flex flex-col gap-2 max-w-xl">
+                {experiencia.map((exp) => <Experiencia {...exp} />)}
+            </section>
+        </div>
+    </main>
+</section>
