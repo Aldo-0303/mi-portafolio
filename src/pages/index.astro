@@ -4,9 +4,12 @@ import Sobremi from '../components/inicio/sobremi.astro';
 import Perfil from '../components/perfil.astro';
 import Layout from '../layouts/Layout.astro';
 import Habilidades from '../components/inicio/habilidades.astro';
+import datos from '../../data.json';
+
+const { informacion: { nombre } } = datos;
 ---
 
-<Layout title="Sobre mi">
+<Layout title={`Mi portafolio - ${nombre}`}>
 	<Cabeza pagina="/" />
 	<Perfil principal />
 	<Sobremi />

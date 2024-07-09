@@ -3,9 +3,12 @@ import Cabeza from '../../components/cabeza.astro';
 import Perfil from '../../components/perfil.astro';
 import Proyectos from '../../components/proyectos/proyectos.astro';
 import Layout from '../../layouts/Layout.astro';
+import datos from '../../../data.json';
+
+const { informacion: { nombre } } = datos;
 ---
 
-<Layout title="Sobre mi">
+<Layout title={`Mis proyectos - ${nombre}`}>
 	<Cabeza pagina="/proyectos" />
 	<Perfil principal={false} />
 	<Proyectos />
