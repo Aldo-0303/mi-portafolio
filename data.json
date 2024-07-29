@@ -23,37 +23,60 @@
         {
             "nombre": "Sistema de solicitud, aprobación y seguimiento de cotizaciones de productos para el área de ventas de TAS El Salvador",
             "descripcion": "Sistema para solicitar cotizaciones de productos, aprobarlas o rechazarlas y llevar un seguimiento de las mismas. Con una interfaz al estilo del correo electrónico permite enviar la cotización al encargado de ventas y recibir la respuesta pudiendo también generarse un chat entre el solicitante y el encargado de ventas para aclarar dudas o detalles de la cotización.",
-            "tecnologias": ["React", "Tailwind CSS", "Node.js", "Express", "JWT", "PostgreSQL"]
+            "tecnologias": ["React", "Tailwind CSS", "Node.js", "Express", "JWT", "PostgreSQL"],
+            "imgs": [
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura1_x2ildc.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura2_ab6joj.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura3_keamwy.webp"
+            ]
         },
         {
             "nombre": "Control de inventario y ganancias",
             "descripcion": "Llevar el control de productos para la venta, registrar su ingreso y precio de compra, establecer precio de venta y vender los productos. Cuenta con sección para ver ganancias o pérdidas.",
-            "tecnologias": ["Next.js", "Tailwind CSS", "Next-auth", "PostgreSQL", "SSR"]
+            "tecnologias": ["Next.js", "Tailwind CSS", "Next-auth", "PostgreSQL", "SSR"],
+            "imgs": [
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura1_mg8qkp.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura2_q7dfq1.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura3_jjnkcc.webp"
+            ]
         },
         {
             "nombre": "Control de salas de reunión",
             "descripcion": "Software para llevar el control del uso de las salas de reuniones disponibles en el edificio. Reservar uso en horarios preestablecidos.",
-            "tecnologias": ["React", "Tailwind CSS", "PHP", "MySQL"]
+            "tecnologias": ["React", "Tailwind CSS", "PHP", "MySQL"],
+            "imgs": [
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura1_ng6qiq.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura2_nebqkd.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura3_pj1pv1.webp"
+            ]
         },
         {
             "nombre": "Sistema de reportería para ISTU (migrado)",
             "descripcion": "Sistema de reportes, resúmenes, gráficos sobre toda la información recogida en los sistemas de Sunset Park y La Puerta Del Diablo.",
-            "tecnologias": ["React", "Tailwind CSS", "Express", "JWT", "MySQL"]
+            "tecnologias": ["React", "Tailwind CSS", "Express", "JWT", "MySQL"],
+            "imgs": [
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura1_dgm7kq.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura2_rxsgne.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura3_bcplev.webp"
+            ]
         },
         {
             "nombre": "Sistema de reportería para ISTU",
             "descripcion": "Sistema de reportes, resúmenes, gráficos sobre toda la información recogida en los sistemas de Sunset Park y La Puerta Del Diablo.",
-            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
+            "imgs": ["https://placehold.co/384x264?text=No+image"]
         },
         {
             "nombre": "Software de administración compatibles con puntos de ventas (POS)",
             "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de La Puerta del Diablo.",
-            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
+            "imgs": ["https://placehold.co/384x264?text=No+image"]
         },
         {
             "nombre": "Software de administración compatibles con puntos de ventas (POS) y en el sistema “Software de cobro de recargas” ambos sistemas para Sunset Park.",
             "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de Sunset Park.",
-            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"]
+            "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
+            "imgs": ["https://placehold.co/384x264?text=No+image"]
         }
     ],
     "habilidades": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Node.js", "MySQL", "PHP", "Next.js", "Git", "GitHub"]
