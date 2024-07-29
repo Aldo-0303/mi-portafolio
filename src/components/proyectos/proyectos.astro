@@ -13,6 +13,7 @@ import Next from '../../icons/next.astro'
 import Git from '../../icons/git.astro'
 import GitHub from '../../icons/GitHub.astro'
 import Bootstrap from "../../icons/bootstrap.astro";
+import ImgProducto from "../ImgProducto";
 
 const iconos = [
     { nombre: 'HTML', icono: Html },
@@ -35,39 +36,54 @@ const { proyectos } = datos;
 <section class="w-full py-8">
     <main class="w-full mx-auto max-w-6xl flex flex-col items-center gap-2 p-4">
         <h1 class="text-3xl font-bold text-white mb-4">Mis proyectos</h1>
-        <div class="relative overflow-x-auto shadow-md rounded-lg">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-300">
-                <thead class="text-xs uppercase bg-gray-700">
-                    <tr>
-                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Nombre</th>
-                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Descripción</th>
-                        <th scope="col" class="px-4 py-1 sm:px-6 sm:py-3">Tecnologías</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        proyectos.map((proyecto) => (
-                            <tr class="odd:bg-gray-900 even:bg-gray-800 border-b border-gray-700">
-                                <th scope="row" class="p-2 sm:px-6 sm:py-4 font-medium whitespace-normal text-white"
-                                >
-                                    {proyecto.nombre}
-                                </th>
-                                <td class="p-2 sm:px-6 sm:py-4">{proyecto.descripcion}</td>
-                                <td class="p-2 sm:px-6 sm:py-4">
-                                    <ul class="flex flex-wrap gap-2">
-                                        {
-                                            proyecto.tecnologias.map((tecnologia) => {
-                                                const Icon = iconos.find((icono) => icono.nombre === tecnologia)?.icono
-                                                return <Tecnologia Icono={Icon} tecnologia={tecnologia} />
-                                            })
-                                        }
-                                    </ul>
-                                </td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </table>
+        <div class="flex flex-col gap-16 mb-1">
+            {
+                proyectos.map((proyecto) => (
+                    <article class="grid grid-cols-1 gap-4 md:grid-cols-2 w-full">
+                        <aside class="flex">
+                            {
+                                proyecto.imgs.map((imgurl) => (
+                                    <ImgProducto client:load url={imgurl} alt={proyecto.nombre} />
+                                ))
+                            }
+                        </aside>
+                        <aside class="flex flex-col justify-center gap-4 text-balance">
+                            <h2 class="text-2xl font-bold text-white">{proyecto.nombre}</h2>
+                            <p class="text-gray-300">{proyecto.descripcion}</p>
+                            <ul class="flex flex-wrap gap-2">
+                                {
+                                    proyecto.tecnologias.map((tecnologia) => {
+                                        const Icon = iconos.find((icono) => icono.nombre === tecnologia)?.icono
+                                        return <Tecnologia Icono={Icon} tecnologia={tecnologia} />
+                                    })
+                                }
+                            </ul>
+                        </aside>
+                    </article>
+                ))
+            }
         </div>
     </main>
 </section>
+
+<style>
+    @keyframes mostrar {
+        from {
+            opacity: 0;
+            scale: 0.1;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }        
+    }
+
+    /* article {
+        view-timeline-name: --reveal;
+        animation-name: mostrar;
+        animation-fill-mode: both;
+        animation-timeline: --reveal;
+        animation-range: entry 10% cover 25%;
+
+    } */
+</style>
