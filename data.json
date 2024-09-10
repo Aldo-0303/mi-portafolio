@@ -21,6 +21,17 @@
     ],
     "proyectos": [
         {
+            "nombre": "Sitio Web para el negocio La Vañita",
+            "descripcion": "Sitio web con la finalidad de poder ofrecerle a los clientes de La Vañita la posibilidad de acumular puntos por cada compra realizada y poder canjearlos por productos y premios vigentes con el objetivo de premiar la preferencia y fidelizar clientes. Además de poder ver el catálogo de productos, información del negocio y información sobre los eventos donde La Vañita estará presente.",
+            "tecnologias": ["React", "Tailwind CSS", "Next.js", "Auth.js", "MySQL"],
+            "imgs": [
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/lavanita/captura1_veag86.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/lavanita/captura2_szp16h.webp",
+                "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/lavanita/captura3_ts7ozg.webp"
+            ],
+            "enlace": "https://lavañita.com"
+        },
+        {
             "nombre": "Sistema de solicitud, aprobación y seguimiento de cotizaciones de productos para el área de ventas de TAS El Salvador",
             "descripcion": "Sistema para solicitar cotizaciones de productos, aprobarlas o rechazarlas y llevar un seguimiento de las mismas. Con una interfaz al estilo del correo electrónico permite enviar la cotización al encargado de ventas y recibir la respuesta pudiendo también generarse un chat entre el solicitante y el encargado de ventas para aclarar dudas o detalles de la cotización.",
             "tecnologias": ["React", "Tailwind CSS", "Node.js", "Express", "JWT", "PostgreSQL"],
@@ -28,7 +39,8 @@
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura1_x2ildc.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura2_ab6joj.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura3_keamwy.webp"
-            ]
+            ],
+            "enlace": ""
         },
         {
             "nombre": "Control de inventario y ganancias",
@@ -38,7 +50,8 @@
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura1_mg8qkp.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura2_q7dfq1.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/inventario/captura3_jjnkcc.webp"
-            ]
+            ],
+            "enlace": ""
         },
         {
             "nombre": "Control de salas de reunión",
@@ -48,7 +61,8 @@
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura1_ng6qiq.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura2_nebqkd.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/salas/captura3_pj1pv1.webp"
-            ]
+            ],
+            "enlace": ""
         },
         {
             "nombre": "Sistema de reportería para ISTU (migrado)",
@@ -58,25 +72,29 @@
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura1_dgm7kq.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura2_rxsgne.webp",
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/reportesistu/captura3_bcplev.webp"
-            ]
+            ],
+            "enlace": ""
         },
         {
             "nombre": "Sistema de reportería para ISTU",
             "descripcion": "Sistema de reportes, resúmenes, gráficos sobre toda la información recogida en los sistemas de Sunset Park y La Puerta Del Diablo.",
             "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
-            "imgs": ["https://placehold.co/384x264?text=No+image"]
+            "imgs": ["https://placehold.co/384x264?text=No+image"],
+            "enlace": ""
         },
         {
             "nombre": "Software de administración compatibles con puntos de ventas (POS)",
             "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de La Puerta del Diablo.",
             "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
-            "imgs": ["https://placehold.co/384x264?text=No+image"]
+            "imgs": ["https://placehold.co/384x264?text=No+image"],
+            "enlace": ""
         },
         {
             "nombre": "Software de administración compatibles con puntos de ventas (POS) y en el sistema “Software de cobro de recargas” ambos sistemas para Sunset Park.",
             "descripcion": "Sistema de venta de tarjetas y recarga de estas para las cajas de las taquillas de Sunset Park.",
             "tecnologias": ["Bootstrap", "JavaScript", "PHP", "MySQL"],
-            "imgs": ["https://placehold.co/384x264?text=No+image"]
+            "imgs": ["https://placehold.co/384x264?text=No+image"],
+            "enlace": ""
         }
     ],
     "habilidades": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Node.js", "MySQL", "PHP", "Next.js", "Git", "GitHub"]

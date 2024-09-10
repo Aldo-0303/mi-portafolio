@@ -1,34 +1,34 @@
 ---
 import datos from "../../../data.json";
 import Tecnologia from "../tecnologia.astro";
-import Html from '../../icons/html.astro'
-import Css from '../../icons/css.astro'
-import Javascript from '../../icons/javascript.astro'
-import Tailwind from '../../icons/tailwind.astro'
-import React from '../../icons/react.astro'
-import Node from '../../icons/node.astro'
-import Sql from '../../icons/sql.astro'
-import Php from '../../icons/php.astro'
-import Next from '../../icons/next.astro'
-import Git from '../../icons/git.astro'
-import GitHub from '../../icons/GitHub.astro'
+import Html from "../../icons/html.astro";
+import Css from "../../icons/css.astro";
+import Javascript from "../../icons/javascript.astro";
+import Tailwind from "../../icons/tailwind.astro";
+import React from "../../icons/react.astro";
+import Node from "../../icons/node.astro";
+import Sql from "../../icons/sql.astro";
+import Php from "../../icons/php.astro";
+import Next from "../../icons/next.astro";
+import Git from "../../icons/git.astro";
+import GitHub from "../../icons/GitHub.astro";
 import Bootstrap from "../../icons/bootstrap.astro";
 import ImgProducto from "../ImgProducto";
 
 const iconos = [
-    { nombre: 'HTML', icono: Html },
-    { nombre: 'CSS', icono: Css },
-    { nombre: 'JavaScript', icono: Javascript },
-    { nombre: 'Tailwind CSS', icono: Tailwind },
-    { nombre: 'React', icono: React },
-    { nombre: 'Node.js', icono: Node },
-    { nombre: 'MySQL', icono: Sql },
-    { nombre: 'PHP', icono: Php },
-    { nombre: 'Next.js', icono: Next },
-    { nombre: 'Git', icono: Git },
-    { nombre: 'GitHub', icono: GitHub },
-    { nombre: 'Bootstrap', icono: Bootstrap }
-]
+    { nombre: "HTML", icono: Html },
+    { nombre: "CSS", icono: Css },
+    { nombre: "JavaScript", icono: Javascript },
+    { nombre: "Tailwind CSS", icono: Tailwind },
+    { nombre: "React", icono: React },
+    { nombre: "Node.js", icono: Node },
+    { nombre: "MySQL", icono: Sql },
+    { nombre: "PHP", icono: Php },
+    { nombre: "Next.js", icono: Next },
+    { nombre: "Git", icono: Git },
+    { nombre: "GitHub", icono: GitHub },
+    { nombre: "Bootstrap", icono: Bootstrap },
+];
 
 const { proyectos } = datos;
 ---
@@ -41,22 +41,41 @@ const { proyectos } = datos;
                 proyectos.map((proyecto) => (
                     <article class="grid grid-cols-1 gap-4 md:grid-cols-2 w-full">
                         <aside class="flex">
-                            {
-                                proyecto.imgs.map((imgurl) => (
-                                    <ImgProducto client:load url={imgurl} alt={proyecto.nombre} />
-                                ))
-                            }
+                            {proyecto.imgs.map((imgurl) => (
+                                <ImgProducto
+                                    client:load
+                                    url={imgurl}
+                                    alt={proyecto.nombre}
+                                />
+                            ))}
                         </aside>
                         <aside class="flex flex-col justify-center gap-4 text-balance">
-                            <h2 class="text-2xl font-bold text-white">{proyecto.nombre}</h2>
+                            <h2 class="text-2xl font-bold text-white">
+                                {proyecto.nombre}
+                            </h2>
                             <p class="text-gray-300">{proyecto.descripcion}</p>
+                            {proyecto.enlace && (
+                                <a href={proyecto.enlace} class="text-cyan-300 underline flex gap-0 items-center group" target="_blank" rel="noopener noreferrer">
+                                    <span>Ver proyecto</span>
+                                    <svg width="16" height="16" stroke="currentColor" stroke-width="1.5" class="transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px] block"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10" />
+                                        <path d="M7 17 17 7" />
+                                    </svg>
+                                </a>
+                            )}
                             <ul class="flex flex-wrap gap-2">
-                                {
-                                    proyecto.tecnologias.map((tecnologia) => {
-                                        const Icon = iconos.find((icono) => icono.nombre === tecnologia)?.icono
-                                        return <Tecnologia Icono={Icon} tecnologia={tecnologia} />
-                                    })
-                                }
+                                {proyecto.tecnologias.map((tecnologia) => {
+                                    const Icon = iconos.find(
+                                        (icono) => icono.nombre === tecnologia,
+                                    )?.icono;
+                                    return (
+                                        <Tecnologia
+                                            Icono={Icon}
+                                            tecnologia={tecnologia}
+                                        />
+                                    );
+                                })}
                             </ul>
                         </aside>
                     </article>
@@ -75,7 +94,7 @@ const { proyectos } = datos;
         to {
             opacity: 1;
             scale: 1;
-        }        
+        }
     }
 
     /* article {
