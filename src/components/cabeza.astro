@@ -21,3 +21,20 @@ const { pagina } = Astro.props;
         </ul>
     </nav>
 </header>
+
+<style>
+    header {
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        animation: cabecera linear both;
+        animation-timeline: scroll();
+        animation-range: 0 150px;
+    }
+
+    @keyframes cabecera {
+        to {
+            background: rgba(0, 0, 0, .3);
+        }
+    }
+</style>
