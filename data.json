@@ -1,7 +1,7 @@
 {
     "informacion": {
         "nombre": "Daniel Francisco Carranza Martínez",
-        "edad": 22,
+        "edad": 23,
         "direccion": "San Salvador, El Salvador",
         "correo": "danielcm7752@gmail.com"
     },
@@ -33,7 +33,7 @@
         },
         {
             "nombre": "Sistema de solicitud, aprobación y seguimiento de cotizaciones de productos para el área de ventas de TAS El Salvador",
-            "descripcion": "Sistema para solicitar cotizaciones de productos, aprobarlas o rechazarlas y llevar un seguimiento de las mismas. Con una interfaz al estilo del correo electrónico permite enviar la cotización al encargado de ventas y recibir la respuesta pudiendo también generarse un chat entre el solicitante y el encargado de ventas para aclarar dudas o detalles de la cotización.",
+            "descripcion": "Sistema para solicitar cotizaciones de productos, aprobarlas o rechazarlas y llevar un seguimiento de las mismas. Con una interfaz al estilo del correo electrónico permite enviar la cotización al encargado de ventas y recibir respuesta, con la posibilidad de generarse un chat entre el solicitante y el encargado de ventas para aclarar dudas o detalles de la cotización.",
             "tecnologias": ["React", "Tailwind CSS", "Node.js", "Express", "JWT", "PostgreSQL"],
             "imgs": [
                 "https://res.cloudinary.com/daustbtmi/image/upload/v1722278606/portafolio-proyectos/cotizaciones/captura1_x2ildc.webp",
